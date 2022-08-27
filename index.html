@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.css"/>
+    <!-- scrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- web_font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="header_container">
+        <div class="header_top_wrap">
+            <nav class="header_top">
+                <ul>
+                    <li class="search_icon">
+                        <input type="text" class="search_bar" placeholder="검색어를 입력하세요">
+                        <img src="img/search_icon.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/bag_icon.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/heart_icon.png" alt="">
+                    </li>
+                    <li>로그인</li>
+                    <li>회원 가입</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_bottom">
+            <div class="header_inner">
+                <div class="header_left">
+                    <span class="all_products">
+                        <i class="xi-bars"></i>
+                        모든 제품
+                        <div class="lnb_wrap">
+                            <div class="lnb">
+                                <p class="lnb_title">
+                                    CATEGORY
+                                </p>
+                                <div class="lnb_inner">
+                                    <ul class="lnb_menu">
+                                        <li>
+                                            <a href="event_page/event.html"><p>IKEA 여름상품</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">정원/가드닝</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">장식 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외활동/피크닉</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">여름 장식/데코</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">여름 파티</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">여름 텍스타일</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">여름 시즌푸드</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>욕실</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">거울</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">세탁용품</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">스툴/벤치</a>                                                
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">세면대세트</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">세면기</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">샤워기</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">수도꼭지</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>침대/매트리스</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">침대</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">침구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">매트리스</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">침대협탁</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">침대수납</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">침대다리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>가구</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">게임용가구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">가구세트</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">소파</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">책장/선반유닛</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">식탁/책상</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">수납장/장식장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">멀티미디어가구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">옷장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">의자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 가구</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>홈오피스</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">사무용 의자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">책상/컴퓨터 책상</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">책상/의자 세트</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">서랍 유닛</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">책장/선반 유닛</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">수납 유닛/수납장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">칸막이/파티션</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">작업등</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>홈스마트</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">스마트 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">스마트 전동 블라인드</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">스마트 컨트롤 시스템</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">와이파이 스피커</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>주방</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">식품보관/정리</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">테이블 텍스타일</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">조리도구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">유리제품/유리병</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">식기도구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">냅킨/냅킨홀더</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">주방 텍스타일</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>조명</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">일반 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">장식 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">시스템 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">스마트 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">욕실 조명</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">LED 전구</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>아웃도어/야외용품</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 가구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 수납</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 쿠션</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">조립식 마루/데크</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">바비큐</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">야외용 주방</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="event_page/event.html"><p>수납/정리</p></a>
+                                            <ul class="lnb_list">
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">책장/선반유닛</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">수납 솔루션 시스템</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">수납장/장식장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">TV/멀티미디어가구</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">서랍장/서랍유닛</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">옷장</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">거실장/찬장/콘솔테이블</a>
+                                                </li>
+                                                <li>
+                                                    <a href="event_page/sub_page/sub.html">슬라이딩도어 시스템</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- lnb menu -->
+                                    <div class="idea">
+                                        <p class="idea_title">
+                                            IDEA
+                                        </p>
+                                        <div class="idea_img">
+                                            <div class="idea_img01">
+                                                <img src="img/idea01.png" alt="">
+                                            </div>
+                                            <div class="idea_img02">
+                                                <img src="img/idea02.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- lnb_inner -->
+                            </div> <!-- lnb -->
+                        </div> <!-- lnb_wrap -->
+                    </span>
+                    <span>인기제품 & 신제품</span>
+                    <span>할인 중</span>
+                </div>
+                <div class="header_logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header_right">
+                    <span>온라인 쇼룸</span>
+                    <span>브랜드</span>
+                    <span>이케아 스토리</span>
+                </div>
+            </div>
+        </div>
+    </div> <!-- header -->
+
+    <section class="main_visual">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/main_visual/main_visual01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main_visual/main_visual02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main_visual/main_visual03.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main_visual/main_visual04.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section> <!-- main_visual -->
+
+    <section class="best">
+        
+        <div class="best_text_wrap">
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="best_text">
+                    <p class="best_title">Best Item</p>
+                    <p class="best_name">SOMMARSLÖJA</p>
+                    <p class="best_desc">
+                        산뜻한 하루의 시작!<br>
+                        솜마르슬뢰야와 함께라면 가능합니다.
+                    </p>
+                </div>
+            </a>
+            <div class="best_btn">
+                <div class="best_prev"><</div>
+                <div class="best_next">></div>
+            </div>
+            
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="best_text">
+                    <p class="best_title">Best Item</p>
+                    <p class="best_name">TRUMMIS</p>
+                    <p class="best_desc">
+                        핸드메이드 라탄으로<br>
+                        시원한 바람을 맞이해볼까요?
+                    </p>
+                </div>
+            </a>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="best_text">
+                    <p class="best_title">Best Item</p>
+                    <p class="best_name">IDANÄS</p>
+                    <p class="best_desc">
+                        4개의 서랍공간을 활용해보세요!<br>
+                        이다네스에 무엇이든 보관할 수 있습니다!
+                    </p>
+                </div>
+            </a>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="best_text">
+                    <p class="best_title">Best Item</p>
+                    <p class="best_name">STUK</p>
+                    <p class="best_desc">
+                        스투크는 공기를 순환시킵니다.<br>
+                        옷과 텍스타일을 오랫동안 손상없이 보관해보세요!
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="left_swiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <img src="img/main_slide/main_slide01.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <img src="img/main_slide/main_slide02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <img src="img/main_slide/main_slide03.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <img src="img/main_slide/main_slide04.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_swiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/main_slide/right_slide02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main_slide/right_slide03.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main_slide/right_slide04.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/main_slide/right_slide01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- best -->
+
+    <section class="recommend_wrap">
+        <div class="recommend_title">
+            RECOMMEND
+        </div>
+        <div class="recommends">
+            <div class="recommend01 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend01.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend02 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend02.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend03 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend03.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend04 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend04.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend05 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend05.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend06 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend06.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend07 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend07.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recommend08 recommend">
+                <a href="event_page/sub_page/detail_page/detail.html">
+                    <div class="recommend_img">
+                        <img src="img/main_recommend/recommend08.png" alt="">
+                    </div>
+                    <div class="recommend_text">
+                        <div class="recommend_icon">
+                            <div class="recommend_cart">
+                                <img src="img/main_recommend/bag_icon.png" alt="">
+                            </div>
+                            <div class="recommend_heart">
+                                <img src="img/main_recommend/heart_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="recommend_name">
+                            SLATTUM 슬라툼
+                        </div>
+                        <div class="recommend_desc">
+                            쿠션형 침대프레임, 크니사
+                        </div>
+                        <div class="recommend_price">
+                            ₩ 179,000
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section> <!-- recommend -->
+
+    <section class="main_hover">
+        <div class="hover_bg">
+            <img src="img/main_hover/main_showroom.png" alt="">
+        </div>
+        <div class="hover01 hover hover_on">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item01.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card01 hover_card">
+                        <img src="img/main_hover/item01.png" alt="">
+                        <div class="hover_text">
+                            <p class="hover_title">VÅRELD<br>보렐드</p>
+                            <p class="hover_desc">쿠션커버</p>
+                            <p class="hover_price">￦ 9,900</p>
+                        </div>
+                </div>
+            </a>
+        </div>
+        <div class="hover02 hover">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item02.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card02 hover_card">
+                    <img src="img/main_hover/item02.png" alt="">
+                    <div class="hover_text">
+                        <p class="hover_title">VITTSJÖ<br>빗셰</p>
+                        <p class="hover_desc">네스팅테이블 2종</p>
+                        <p class="hover_price">￦ 59,900</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="hover03 hover">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item03.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card03 hover_card">
+                    <img src="img/main_hover/item03.png" alt="">
+                    <div class="hover_text">
+                        <p class="hover_title">MÖRBYLÅNGA<br>뫼르뷜롱아</p>
+                        <p class="hover_desc">테이블</p>
+                        <p class="hover_price">￦ 699,000</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="hover04 hover">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item04.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card04 hover_card">
+                    <img src="img/main_hover/item04.png" alt="">
+                    <div class="hover_text">
+                        <p class="hover_title">UPPVIND<br>우프빈드</p>
+                        <p class="hover_desc">플로어스탠드</p>
+                        <p class="hover_price">￦ 99,900</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="hover05 hover">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item05.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card05 hover_card">
+                    <img src="img/main_hover/item05.png" alt="">
+                    <div class="hover_text">
+                        <p class="hover_title">NÄVLINGE<br>네블링에</p>
+                        <p class="hover_desc">LED플로어스탠드</p>
+                        <p class="hover_price">￦ 39,900</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="hover06 hover">
+            <div class="hover_content_img">
+                <img src="img/main_hover/cut_item06.png" alt="">
+            </div>
+            <a href="event_page/sub_page/detail_page/detail.html">
+                <div class="hover_card06 hover_card">
+                    <img src="img/main_hover/item06.png" alt="">
+                    <div class="hover_text">
+                        <p class="hover_title">LANDSKRONA<br>란스크로나</p>
+                        <p class="hover_desc">암체어</p>
+                        <p class="hover_price">￦ 379,000</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class="hover_mark_wrap">
+            <li class="hover_mark01 hover_mark"></li>
+            <li class="hover_mark02 hover_mark"></li>
+            <li class="hover_mark03 hover_mark"></li>
+            <li class="hover_mark04 hover_mark"></li>
+            <li class="hover_mark05 hover_mark"></li>
+            <li class="hover_mark06 hover_mark"></li>
+        </ul>
+    </section> <!-- main_hover -->
+
+    <section class="category_wrap">
+        <div class="category_title">
+            CATEGORY
+        </div>
+        <div class="category">
+            <div class="category_sheet_wrap">
+                <ul class="category_sheet_bath category_sheet on">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>GANSJÖN</span><br>
+                            간셴
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SKISSEN</span><br>
+                            시센
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TISKEN</span><br>
+                            티스켄
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BROGRUND</span><br>
+                            브로그룬드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LILLASJÖN</span><br>
+                            릴라셴
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KROKFJORDEN</span><br>
+                            크록피오르덴
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BROGRUND</span><br>
+                            브로그룬드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>GÖRBRA</span><br>
+                            예르브라
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bath08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- bath -->
+
+
+                <ul class="category_sheet_bed category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SLATTUM</span><br>
+                            슬라툼
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BLÅKULLEN</span><br>
+                            블로쿨렌
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SVÄRTA</span><br>
+                            스베르타
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SMÅSTAD</span><br>
+                            스모스타드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>HEMNES</span><br>
+                            헴네스
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>RAMSTA</span><br>
+                            람스타
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>FYRESDAL</span><br>
+                            퓌레스달
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BRIMNES</span><br>
+                            브림네스
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/bed08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul> <!-- bed -->
+
+                <ul class="category_sheet_furniture category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LOMMARP/BJÖRKBERGET</span><br>
+                            롬마르프/비에르크베리에
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>INGATORP</span><br>
+                            잉아토르프
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LERHAMN</span><br>
+                            레르함
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KALLHÄLL</span><br>
+                            칼헬
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>HAUGA</span><br>
+                            하우가
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BARSVIKEN</span><br>
+                            바르스비켄
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LOMMARP</span><br>
+                            롬마르프
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>HAUGA</span><br>
+                            하우가
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/furniture08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- furniture -->
+
+                <ul class="category_sheet_homeoffice category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>MICKE</span><br>
+                            미케
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>PÅHL</span><br>
+                            폴
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TROTTEN</span><br>
+                            트로텐
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KALLAX/LINNMON</span><br>
+                            칼락스/린몬
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LOBERGET/MALSKÄR</span><br>
+                            로베리에트/말셰르
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>JÄRVFJÄLLET</span><br>
+                            예르브피엘레트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TERTIAL</span><br>
+                            테르티알
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>ELLOVEN</span><br>
+                            엘로벤
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homeoffice08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- homeoffice -->
+
+                <ul class="category_sheet_homesmart category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TRÅDFRI</span><br>
+                            트로드프리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>NORRFLY</span><br>
+                            노르플뤼
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>IRSTA</span><br>
+                            이르스타
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TRÅDFRI</span><br>
+                            트로드프리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TRÅDFRI</span><br>
+                            트로드프리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SKYDRAG/TRÅDFRI</span><br>
+                            쉬드라그/트로드프리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TRÅDFRI</span><br>
+                            트로드프리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>MITTLED</span><br>
+                            미틀레드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/homesmart08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- homesmart -->
+
+                <ul class="category_sheet_kitchen category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>RÅSKOG</span><br>
+                            로스코그
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TORNVIKEN</span><br>
+                            토른비켄
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KUNGSFORS</span><br>
+                            쿵스포르스
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KUNGSFORS</span><br>
+                            쿵스포르스
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TILLREDA</span><br>
+                            틸레다
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TILLREDA</span><br>
+                            틸레다
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SOTARYD</span><br>
+                            소타뤼드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TILLREDA</span><br>
+                            틸레다
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/kitchen08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- kitchen -->
+
+                <ul class="category_sheet_light category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BARLAST</span><br>
+                            발라스트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>STOCKHOLM 2017</span><br>
+                            스톡홀름 2017
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BÖJA</span><br>
+                            뵈야
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TÅGARP</span><br>
+                            토가르프
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>ÅRSTID</span><br>
+                            오르스티드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>HÖGVIND</span><br>
+                            회그빈드
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>VIRRMO</span><br>
+                            비르모
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>TÄLLBYN</span><br>
+                            텔뷘
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/light08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- light -->
+
+                <ul class="category_sheet_outdoor category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KÅSEBERGA</span><br>
+                            코세베리아
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>FJÄLLMOTT</span><br>
+                            피엘모트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>RUNNEN</span><br>
+                            룬넨
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>ALTAPPEN</span><br>
+                            알타펜
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>VÅRDA</span><br>
+                            보르다
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>SOCKER</span><br>
+                            소케르
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>GRÄSMARÖ</span><br>
+                            그레스마뢰
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>BRYTBÖNA</span><br>
+                            브뤼트뵈나
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/outdoor08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- outdoor -->
+
+                <ul class="category_sheet_storage category_sheet">
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>EKET</span><br>
+                            에케트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage01.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="category_overlay">
+                            <div class="overlay_text">
+                                <p class="overlay_title">
+                                    욕실용품 3종
+                                </p>
+                                <p class="overlay_price">
+                                    19,900
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>EKET</span><br>
+                            에케트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage02.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>KALLAX</span><br>
+                            칼락스
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage03.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>EKET</span><br>
+                            에케트
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage04.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>LERBERG</span><br>
+                            레르베리
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage05.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>JONAXEL</span><br>
+                            요낙셀
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage06.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>FJÄLLBO</span><br>
+                            피엘보
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage07.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="category_item">
+                        <p class="category_item_title">
+                            <span>FJÄLLBO</span><br>
+                            피엘보
+                        </p>
+                        <div class="category_item_img">
+                            <img src="img/main_tab/storage08.png" alt="">
+                        </div>
+                        <a href="event_page/sub_page/detail_page/detail.html">
+                            <div class="category_overlay">
+                                <div class="overlay_text">
+                                    <p class="overlay_title">
+                                        욕실용품 3종
+                                    </p>
+                                    <p class="overlay_price">
+                                        19,900
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul> <!-- storage -->
+            </div>
+
+            <ul class="category_tabs">
+                <li class="on">
+                    <div class="category_tab">
+                        <div class="category_tab_img">
+                            <img src="img/main_tab/bath_tab.png" alt="">
+                        </div>
+                        <p>욕실</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/bed_tab.png" alt="">
+                        <p>침대/매트리스</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/furniture_tab.png" alt="">
+                        <p>가구</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/homeoffice_tab.png" alt="">
+                        <p>홈오피스</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/homesmart_tab.png" alt="">
+                        <p>홈스마트</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/kitchen_tab.png" alt="">
+                        <p>주방</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/light_tab.png" alt="">
+                        <p>조명</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/outdoor_tab.png" alt="">
+                        <p>아웃도어/야외용품</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="category_tab">
+                        <img src="img/main_tab/storage_tab.png" alt="">
+                        <p>수납/정리</p>
+                    </div>
+                </li>
+            </ul> <!-- category_tab -->
+        </div>
+
+    </section> <!-- category -->
+
+    <section class="new_wrap">
+        <div class="new">
+            <p class="new_title">
+                IKEA 제품에 관한 새로운 소식, <span>신제품 공개</span>까지
+            </p>
+            <div class="new_time">
+                <img src="img/new_time.png" alt="">
+                <p class="new_time_hour"></p>
+                <p class="new_time_minute"></p>
+                <p class="new_time_second"></p>
+            </div>
+            <div class="new_img_box">
+                <div class="new_img">
+                    <img src="img/new.png" alt="">
+                </div>
+                <div class="new_text_box">
+                    <div class="new_text">NEXT PRODUCT?</div>
+                    <div class="new_more">MORE ABOUT PRODUCT 	
+                        ▶</div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- new -->
+
+    <section class="instagram">
+        <div class="instagram_title">
+            INSTAGRAM
+        </div>
+        <div class="instagram_link">
+            <a href="https://www.instagram.com/ikeakr/" target="_blank">@ikeakr</a>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram01.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram02.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram03.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram04.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram05.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram06.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram07.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/main_instagram/instagram08.jpg">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> <!-- instagram -->
+
+    <div class="footer_wrap">
+        <div class="footer_top">
+            <ul>
+                <li>개인정보처리방침</li>
+                <li>쿠키 정책</li>
+                <li>쿠키 설정</li>
+                <li>Responsible disclosure</li>
+            </ul>
+        </div>
+        <footer class="footer_inner">
+            <div class="footer_middle">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="img/footer_logo.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li>고객문의</li>
+                    <li>고객지원</li>
+                    <li>자주 묻는 질문</li>
+                    <li>문의하기</li>
+                    <li>배송조회</li>
+                    <li>교환환불</li>
+                    <li>품질보증</li>
+                    <li>제품리콜</li>
+                    <li>피드백</li>
+                    <li>부품 신청</li>
+                </ul>
+                <ul>
+                    <li>쇼핑하기</li>
+                    <li>쇼핑하기</li>
+                    <li>전화 주문</li>
+                    <li>IKEA for Business</li>
+                    <li>셀프 플래닝</li>
+                    <li>IKEA 모바일 앱</li>
+                    <li>제품 사용 팁/가이드</li>
+                    <li>제품 구매 가이드</li>
+                    <li>결제 옵션</li>
+                    <li>기프트 카드</li>
+                </ul>
+                <ul>
+                    <li>서비스</li>
+                    <li>IKEA 서비스</li>
+                    <li>배송 서비스</li>
+                    <li>조립 서비스</li>
+                    <li>설치 서비스</li>
+                    <li>주방 서비스</li>
+                    <li>플래닝 서비스</li>
+                    <li>인테리어 디자인 서비스</li>
+                    <li>바이백 서비스</li>
+                </ul>
+                <ul>
+                    <li>IKEA 이야기</li>
+                    <li>브랜드 소개</li>
+                    <li>집에서의 삶</li>
+                    <li>지속가능한 생활</li>
+                    <li>내가 아끼는 집, 나를 아끼는 집</li>
+                    <li>뉴스룸</li>
+                    <li>채용정보</li>
+                </ul>
+                <ul>
+                    <li>IKEA Family</li>
+                    <li>지금 IKEA Family에 무료로 가입하고<br>다양한 멤버 전용 혜택을 누리세요.</li>
+                    <li class="footer_btn">IKEA Family 가입하기</li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <div class="sns_img">
+                    <a href="https://ko-kr.facebook.com" target="_blank">
+                        <img src="img/sns_facebook.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/ikeakr/" target="_blank">
+                        <img src="img/sns_instagram.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" target="_blank">
+                        <img src="img/sns_youtube.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li>IKEA 코리아</li>
+                    <li>주소 : (우)14352 경기도 광명시 일직로 17 IKEA광명점</li>
+                    <li>사업자 등록번호 : 106-86-82871 사업자정보확인</li>
+                </ul>
+                <ul>
+                    <li>대표자 : 프레드릭 요한손</li>
+                    <li>통신판매업 신고 : 2018-경기광명-0209</li>
+                    <li>TEL : 1670-4532</li>
+                </ul>
+            </div>
+        </footer>
+    </div> <!-- footer -->
+
+    <div class="top_btn">
+        TOP
+    </div>
+
+</body>
+</html>
